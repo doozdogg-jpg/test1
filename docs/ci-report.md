@@ -2,7 +2,8 @@
 
 ## Событие, ветка и SHA
 - Workflow: .github/workflows/ci.yml (push в main, pull_request, workflow_dispatch), матрица Python 3.11 и 3.12.
-- Исходный запуск на main: SHA 939265f — URL: <ВСТАВИТЬ после push>
+- Репозиторий: https://github.com/doozdogg-jpg/test1; красный эксперимент: PR lab/red -> lab-red-base.
+- Исходный запуск на main отдельно не выполнялся (workflow попал в GitHub вместе с историей); базовое состояние проверено локально.
 - Исходный набор: 6 методов, OK.
 
 ## Красный запуск
