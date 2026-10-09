@@ -6,7 +6,7 @@
 - Исходный набор: 6 методов, OK.
 
 ## Красный запуск
-- Ветка ci/boundary, SHA c604841, событие pull_request. URL: <ВСТАВИТЬ>
+- Ветка ci/boundary, SHA c604841, событие pull_request. URL: https://github.com/doozdogg-jpg/test1/actions/runs/37996911031
 - Job: tests (3.11) и tests (3.12); упавший step: Run tests.
 - Упали test_at_limit, test_high_priority, test_low_priority. Ожидалось False, получено True (AssertionError: True is not false).
 - Причина: в sla.py оператор > заменён на >=, на границе лимита функция стала возвращать True, а по REQUIREMENTS.md просрочка только строго после лимита.
@@ -15,7 +15,8 @@
 - SHA ec3107c: оператору возвращено >; diff относительно красного коммита — одна строка условия.
 
 ## Зелёный запуск на Python 3.11 и 3.12
-- SHA faa4cca (ветка ci/boundary), затем main после merge. URL: <ВСТАВИТЬ>
+- SHA faa4cca (ветка lab/boundary, PR #1): https://github.com/doozdogg-jpg/test1/actions/runs/37996502987
+- SHA 7ad19bc (после merge PR #1 в lab-base): https://github.com/doozdogg-jpg/test1/actions/runs/37996724925
 - Оба job зелёные, Run tests: 8 методов, OK.
 
 ## Два новых сценария
